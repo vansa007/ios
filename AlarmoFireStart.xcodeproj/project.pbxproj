@@ -12,6 +12,8 @@
 		281A471E1E66842E00B6E400 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281A471C1E66842E00B6E400 /* Main.storyboard */; };
 		281A47201E66842E00B6E400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281A471F1E66842E00B6E400 /* Assets.xcassets */; };
 		281A47231E66842E00B6E400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281A47211E66842E00B6E400 /* LaunchScreen.storyboard */; };
+		28F49A991E66AB80006C077B /* AddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F49A981E66AB80006C077B /* AddressTableViewCell.swift */; };
+		332EC098F9EF7BE66B08F0D8 /* Pods_AlarmoFireStart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 861ED63B10449326249EB8BD /* Pods_AlarmoFireStart.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		281A471F1E66842E00B6E400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		281A47221E66842E00B6E400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		281A47241E66842E00B6E400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28F49A981E66AB80006C077B /* AddressTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressTableViewCell.swift; sourceTree = "<group>"; };
+		7A3799069DB8EF6C593C3B78 /* Pods-AlarmoFireStart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmoFireStart.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlarmoFireStart/Pods-AlarmoFireStart.release.xcconfig"; sourceTree = "<group>"; };
+		861ED63B10449326249EB8BD /* Pods_AlarmoFireStart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlarmoFireStart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E04AD6C646AE0F4B4BC58253 /* Pods-AlarmoFireStart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmoFireStart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlarmoFireStart/Pods-AlarmoFireStart.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				332EC098F9EF7BE66B08F0D8 /* Pods_AlarmoFireStart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				281A47171E66842E00B6E400 /* AlarmoFireStart */,
 				281A47161E66842E00B6E400 /* Products */,
+				7AA1B3D5ACD884B57D6E1CAB /* Pods */,
+				830B183C2074297EA10E5C8F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				281A471F1E66842E00B6E400 /* Assets.xcassets */,
 				281A47211E66842E00B6E400 /* LaunchScreen.storyboard */,
 				281A47241E66842E00B6E400 /* Info.plist */,
+				28F49A981E66AB80006C077B /* AddressTableViewCell.swift */,
 			);
 			path = AlarmoFireStart;
+			sourceTree = "<group>";
+		};
+		7AA1B3D5ACD884B57D6E1CAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E04AD6C646AE0F4B4BC58253 /* Pods-AlarmoFireStart.debug.xcconfig */,
+				7A3799069DB8EF6C593C3B78 /* Pods-AlarmoFireStart.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		830B183C2074297EA10E5C8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				861ED63B10449326249EB8BD /* Pods_AlarmoFireStart.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 281A47271E66842E00B6E400 /* Build configuration list for PBXNativeTarget "AlarmoFireStart" */;
 			buildPhases = (
+				B5D99F96670104D38383E344 /* [CP] Check Pods Manifest.lock */,
 				281A47111E66842D00B6E400 /* Sources */,
 				281A47121E66842D00B6E400 /* Frameworks */,
 				281A47131E66842D00B6E400 /* Resources */,
+				86D3D522F806740B1C3D00F1 /* [CP] Embed Pods Frameworks */,
+				BCFE573B2A782330D59C77F3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +126,7 @@
 				TargetAttributes = {
 					281A47141E66842D00B6E400 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = PG98TTFS9P;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,11 +162,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		86D3D522F806740B1C3D00F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlarmoFireStart/Pods-AlarmoFireStart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5D99F96670104D38383E344 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BCFE573B2A782330D59C77F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlarmoFireStart/Pods-AlarmoFireStart-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		281A47111E66842D00B6E400 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28F49A991E66AB80006C077B /* AddressTableViewCell.swift in Sources */,
 				281A471B1E66842E00B6E400 /* ViewController.swift in Sources */,
 				281A47191E66842E00B6E400 /* AppDelegate.swift in Sources */,
 			);
@@ -258,8 +338,11 @@
 		};
 		281A47281E66842E00B6E400 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E04AD6C646AE0F4B4BC58253 /* Pods-AlarmoFireStart.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PG98TTFS9P;
 				INFOPLIST_FILE = AlarmoFireStart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kosign.AlarmoFireStart;
@@ -270,8 +353,11 @@
 		};
 		281A47291E66842E00B6E400 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A3799069DB8EF6C593C3B78 /* Pods-AlarmoFireStart.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PG98TTFS9P;
 				INFOPLIST_FILE = AlarmoFireStart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kosign.AlarmoFireStart;
@@ -299,6 +385,7 @@
 				281A47291E66842E00B6E400 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
